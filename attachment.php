@@ -12,11 +12,11 @@
           </header>
 
           <div class="entry-content">
-            
 
             <p><a href="<?php echo $post->guid; ?>">Download</a></p>
 
             <?php the_content(); ?>
+
           </div>
           <?php if (comments_open()) : ?>
             <?php comments_template(); ?>

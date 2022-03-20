@@ -38,6 +38,26 @@ function yussifweb_widgets_init() {
         'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>',
     ]);
+
+    register_sidebar([
+        'name' => esc_html__('Page Sidebar', 'yussifweb'),
+        'id' => 'page-sidebar',
+        'description' => esc_html__('Add widgets for page sidebar here', 'yussifweb'),
+        'before' => '<section class="widget">',
+        'after' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ]);
+
+    register_sidebar([
+        'name' => esc_html__('Front Page Sidebar', 'yussifweb'),
+        'id' => 'front-page',
+        'description' => esc_html__('Add widgets for front page sidebar here', 'yussifweb'),
+        'before' => '<section class="widget">',
+        'after' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ]);
 }
 
 add_action('widgets_init', 'yussifweb_widgets_init');
